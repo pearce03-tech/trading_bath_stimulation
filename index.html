@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Bot Simulation</title>
+  <link rel="stylesheet" href="styl.css">
+  <script src="scrip.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Trading Bot Simulation</h1>
+    
+    <div class="status">
+      <p><strong>Account Balance: </strong>$<span id="account-balance">10000</span></p>
+      <p><strong>Current Price: </strong>$<span id="current-price">100</span></p>
+      <p><strong>Bot Status: </strong><span id="bot-status">Stopped</span></p>
+    </div>
+
+    <div class="controls">
+      <button id="start-bot" onclick="startBot()">Start Bot</button>
+      <button id="stop-bot" onclick="stopBot()">Stop Bot</button>
+    </div>
+
+    <div class="trades">
+      <h2>Trade Log</h2>
+      <ul id="trade-log">
+        <li>No trades yet.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
